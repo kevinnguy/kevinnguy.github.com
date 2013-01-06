@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Kevin Nguy</title>
+ <link href="http://kevinnguy.github.com/atom.xml" rel="self"/>
+ <link href="http://kevinnguy.github.com/"/>
+ <updated>2013-01-06T01:12:15-08:00</updated>
+ <id>http://kevinnguy.github.com</id>
+ <author>
+   <name>Kevin Nguy</name>
+   <email>me@kevinnguy.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Hello World</title>
+   <link href="http://kevinnguy.github.com/hello-world"/>
+   <updated>2013-01-06T00:00:00-08:00</updated>
+   <id>http:/kevinnguy.github.com/hello-world</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Multitasking makes you dumb</title>
+   <link href="http://kevinnguy.github.com/multitasking-makes-you-dumb"/>
+   <updated>2012-11-05T00:00:00-08:00</updated>
+   <id>http:/kevinnguy.github.com/multitasking-makes-you-dumb</id>
+   <content type="html">&lt;div class=&quot;intro&quot;&gt;
+  As part of researching for my 30 days of super productivity, I have explored
+  the topics of context switching and multitasking. I found that multitasking has
+  a tremendous effect on how we approach tasks and too much multitasking can
+  negatively alter how our brain processes information.
+&lt;/div&gt;
+
+&lt;p&gt;Multitasking is attempting to handle more than one task simultaneously. The human
+mind is not directly capable of this, thus it emulates multitasking by
+rapidly alternating between the tasks. This makes for a higher rate of errors
+due to lack of attention, and since context switching from one task to another
+is expensive, the sum of time spent on the tasks is larger than if the tasks
+were done sequentially. (Think green threads with a huge context switch cost
+with lots of deadlocks and race conditions.)&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;Furthermore, our brain exercises something Dr. Meyer of the University of
+Michigan calls &amp;#8220;adaptive executive control&amp;#8221; where our brain assigns priorities
+to the tasks we are performing in parallel.&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; For instance, when driving and
+talking in cell phone, our brain assigns a higher priority to responding to our
+phone conversation than focusing on the road. This deteriorates reaction time to
+worse than drivers intoxicated over the 0.08% legal limit.&lt;sup id=&quot;fnref:5&quot;&gt;&lt;a href=&quot;#fn:5&quot; rel=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;multitasking-impairs-cognitive-control&quot;&gt;Multitasking impairs cognitive control&lt;/h2&gt;
+
+&lt;p&gt;Stanford professors thought before their study on multitasking that people who
+frequently multitask must be excellent in recognizing important elements in a
+series of tasks:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In one experiment, the groups were shown sets of two red rectangles alone or
+surrounded by two, four or six blue rectangles. Each configuration was flashed
+twice, and the participants had to determine whether the two red rectangles in
+the second frame were in a different position than in the first frame.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;They were told to ignore the blue rectangles, and the low multitaskers had no
+problem doing that. But the high multitaskers were constantly distracted by the
+irrelevant blue images. Their performance was horrible.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Desperately they attempted to find tasks in which the frequent multitaskers
+performed better, such as short term memory and context switching, but
+multitaskers failed to show any improvement in any task the Stanford
+psychologists presented. Multitaskers have trouble paying attention and are easily
+distracted. They have their mind in a myriad of different places at the same
+time, not effectively processing any information.&lt;/p&gt;
+
+&lt;p&gt;One last theory involved the possibility of multitaskers being faster at context
+switching, performing this all the time, but even here their performance was
+inferior:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The test subjects were shown images of letters and numbers at the same time and
+instructed what to focus on. When they were told to pay attention to numbers,
+they had to determine if the digits were even or odd. When told to concentrate
+on letters, they had to say whether they were vowels or consonants.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Again, the heavy multitaskers underperformed the light multitaskers.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&amp;#8220;They couldn&amp;#8217;t help thinking about the task they weren&amp;#8217;t doing,&amp;#8221; Ophir said.
+&amp;#8220;The high multitaskers are always drawing from all the information in front of
+them. They can&amp;#8217;t keep things separate in their minds.&amp;#8221;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;multitaskers-worse-at-multitasking&quot;&gt;Multitaskers worse at multitasking&lt;/h2&gt;
+
+&lt;p&gt;Effectively, multitaskers train themselves to superficially consume multiple
+sources of input from memory and the external world. Their ability to filter
+relevance to their current goal declines and they are easily distracted by irrelevant
+information. Multitaskers actually become bad at multitasking, by multitasking.&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; rel=&quot;footnote&quot;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;Multitasking students report to have more issues in their academic work.
+Students who browse Facebook and instant messaging while doing homework on
+average achieve lower grades in school.&lt;sup id=&quot;fnref:6&quot;&gt;&lt;a href=&quot;#fn:6&quot; rel=&quot;footnote&quot;&gt;6&lt;/a&gt;&lt;/sup&gt; In 1999 16% of media consumption was
+combined, in 2005 26% of media was used together. This number must have
+skyrocketed since, with Generation Z and Y being its victims.&lt;sup id=&quot;fnref:7&quot;&gt;&lt;a href=&quot;#fn:7&quot; rel=&quot;footnote&quot;&gt;7&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:4&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Human_multitasking&quot;&gt;Human multitasking&lt;/a&gt;&lt;a href=&quot;#fnref:4&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.thenewatlantis.com/docLib/20080605_TNA20Rosen.pdf&quot;&gt;The Myth of Multitasking&lt;/a&gt;&lt;a href=&quot;#fnref:3&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:5&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://www.distraction.gov/download/research-pdf/Comparison-of-CellPhone-Driver-Drunk-Driver.pdf&quot;&gt;A Comparison of the Cell Phone Driver and the Drunk Driver&lt;/a&gt;&lt;a href=&quot;#fnref:5&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://news.stanford.edu/news/2009/august24/multitask-research-study-082409.html&quot;&gt;Media multitaskers pay mental price&lt;/a&gt;&lt;a href=&quot;#fnref:1&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://news.bbc.co.uk/2/hi/technology/8219212.stm&quot;&gt;Multitaskers bad at multitasking&lt;/a&gt;&lt;a href=&quot;#fnref:2&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:6&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://blog.reyjunco.com/pdf/JuncoCottenMultitaskingCAE2010.pdf&quot;&gt;Perceived academic effects of instant messaging use&lt;/a&gt;&lt;a href=&quot;#fnref:6&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:7&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://blog.reyjunco.com/wp-content/uploads/2010/03/JuncoCottenMultitaskingFBTextCAE2012.pdf&quot;&gt;The relationship between multitasking and academic performance&lt;/a&gt;&lt;a href=&quot;#fnref:7&quot; rel=&quot;reference&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+</feed>
