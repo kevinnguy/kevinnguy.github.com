@@ -1,4 +1,4 @@
 # kevinnguy.github.com
 
-My personal website and blog.
+My open blog. Come visit at http://kevinnguy.github.com
 
