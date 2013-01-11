@@ -1169,8 +1169,10 @@ label span
 { color:#999; }
 
 body
-{ margin-top:60px;
-  font:16px 'Open sans',sans-serif; }
+{ margin-top:80px;
+  font:16px 'Open sans',sans-serif; 
+  color: #333;
+}
 
 h1
 { color:#423f37;
@@ -1272,7 +1274,7 @@ article ul li li li
 	overflow:hidden; }
 
 #social a,#social a:visited
-{ color:#444;
+{ color:#333;
   -webkit-transition:color 200ms ease-in;
   -moz-transition:color 200ms ease-in;
   -o-transition:color 200ms ease-in; }
@@ -1362,7 +1364,7 @@ sub
 
 .small {
 	font-size: 14px;
-	color: #000;
+	color: #333;
 }
 
 .bottom {
