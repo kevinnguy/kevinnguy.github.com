@@ -1340,11 +1340,14 @@ a:visited
 { padding-bottom:10px; }
 
 #posts
-{ font-size:18px; }
+{ font-size:22px; 
+  padding-top: 40px;}
 
 #posts span
 { color:#444;
   text-align:right; }
+
+.post {padding-bottom: 30px;}
 
 #main
 { float:right;
@@ -1388,11 +1391,11 @@ article ul li li li
 #avatar
 { background-image:url('/static/images/avatar.jpg');
   background-size:cover;
-  height:154px;
-  width:154px;
+  height:200px;
+  width:200px;
+  margin: 20px 13px;
   display:block;
   border-radius:50%;
-  margin-bottom:8px;
   border:2px solid #999;
   -webkit-transition:all 500ms ease-in;
   -moz-transition:all 500ms ease-in;
@@ -1533,4 +1536,6 @@ sub
   text-align:center;
   text-decoration:none;
   text-shadow:0 0 .5em #444; }
+
+#content {padding-top: 10px;}
 

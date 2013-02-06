@@ -3,22 +3,13 @@ layout: default
 blog: true
 ---
 
-<article class='ten columns offset-by-four' id="article-content">
-  <header class="ten columns" id="article-header">
-    <h1>{{ page.title }}</h1>
-  </header>
+<ul class="twelve columns">
+    <li id="posts">
+      <a class="eight columns" href="{{ page.url }}">{{ page.title }}</a>
+      <span class="three columns">{{ page.date | date: "%b %d, %Y" }}</span>
+    </li>
 
-  <div class='ten columns gray' id="date-header">
-    <p>
-      {{ page.date | date: "%b %Y" }}
-  {% if page.updated_at %}
-      revised {{ page.updated_at }}
-  {% endif %}
-    </p>
-
-  </div>
-
-  <div class="ten columns" id="article-content">
-    {{ content }}
-  </div>
-</article>
+    <article class="eleven columns" id="content">
+      {{ content }}
+    </article>
+</ul>
