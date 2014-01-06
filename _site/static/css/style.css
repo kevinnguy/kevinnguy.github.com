@@ -1445,7 +1445,7 @@ sub
 .icon
 { padding-left:7px; }
 
-#header{margin-bottom: 10px;}
+#header{margin-bottom: 28px;}
 
 #me
 { font-size:64px;
@@ -1456,7 +1456,7 @@ sub
 	font-size: 20px;
  float: right;
  width: 60%;
- margin-top: 22px;
+ margin-top: 32px;
 }
 
 #education,#courses,#languages
