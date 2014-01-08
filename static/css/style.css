@@ -685,10 +685,10 @@ sub
 #experience,#projects
 { font-size:36px;
   text-transform:uppercase;
-  margin-bottom:8px; }
+  margin-bottom:10px; }
 
 #projects
-{ margin-top:10px; }
+{ margin-top:30px; }
 
 .description
 { padding-right:7px; }
@@ -698,7 +698,7 @@ sub
   color:#333; }
 
 .bottom
-{ margin-bottom:20px; }
+{ margin-bottom:30px; }
 
 .right
 { text-align:right; }
