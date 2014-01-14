@@ -685,7 +685,7 @@ sub
 { border:1px solid #aab8ff;
   color:#fff;
   display:block;
-  font: inherit;
+  font-size: 14px;
   margin:.05em 0 .075em 0;
   padding:.5em 3.5em;
   text-align:center;
