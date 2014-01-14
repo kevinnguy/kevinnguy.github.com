@@ -607,10 +607,15 @@ sub
  margin-top: 32px;
 }
 
-#education,#courses,#languages,#contact
+#contact {
+	margin-bottom:8px; 
+}
+
+#education,#courses,#languages
 { 
   margin-top:50px;
-  margin-bottom:8px; }
+  margin-bottom:8px; 
+  }
 
 #info
 { text-align:right; margin-top: 10px;}
