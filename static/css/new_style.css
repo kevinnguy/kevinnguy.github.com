@@ -690,3 +690,25 @@ sub
 
 #content {padding-top: 10px;}
 
+
+/* Font weights */
+.light {
+	font-weight: 300;
+}
+
+.normal {
+	font-weight: 400;
+}
+
+.semi-bold {
+	font-weight: 600;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.extra-bold {
+	font-weight: 800;
+}
+
