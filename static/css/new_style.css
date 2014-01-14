@@ -596,7 +596,9 @@ sub
 { 
   text-align:center; 
   float: left; 
-  width: 100%}
+  width: 100%;
+  padding-bottom: 20px;
+}
 
 #objective
 {
@@ -605,7 +607,7 @@ sub
  margin-top: 32px;
 }
 
-#education,#courses,#languages
+#education,#courses,#languages,#contact
 { 
   margin-top:50px;
   margin-bottom:8px; }
