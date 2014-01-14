@@ -598,7 +598,6 @@ sub
 
 #me
 { 
-  text-transform:uppercase;
   text-align:center; 
   float: left; 
   width: 100%}
@@ -711,4 +710,5 @@ sub
 .extra-bold {
 	font-weight: 800;
 }
+
 
