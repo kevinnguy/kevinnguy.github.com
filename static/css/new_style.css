@@ -232,7 +232,7 @@ hr
   height:0; }
 
 a,a:visited
-{ color:#333;
+{ color:#000;
   text-decoration:underline;
   outline:0; }
 
@@ -469,7 +469,7 @@ body
 { /*background-image:url('/static/images/bg.png');*/
   margin-top:15px;
   font-family: 'Open Sans', sans-serif;
-  color:#333; }
+  color:#000; }
 
 h1
 {
@@ -552,7 +552,7 @@ article ul li li li
   overflow:hidden; }
 
 #social a,#social a:visited
-{ color:#333;
+{ color:#000;
   -webkit-transition:color 200ms ease-in;
   -moz-transition:color 200ms ease-in;
   -o-transition:color 200ms ease-in; }
@@ -727,12 +727,12 @@ width: 800px;
 }
 
 li {
-	font-size: 16px;
+	font-size: 17px;
 	font-weight: 300;
 }
 
 dt {
-	font-size: 18px;
+	font-size: 19px;
 	font-weight: 300;
 }
 
