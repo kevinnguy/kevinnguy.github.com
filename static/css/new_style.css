@@ -610,13 +610,12 @@ border-bottom: 1px solid #e4e7eb;
  margin-top: 32px;
 }
 
-#contact, #education,#courses,#languages {
-}
 
 #contact, #education,#courses,#languages,#experience,#projects
 { 
   margin-top:50px;
   margin-bottom:8px; 
+  	  border-bottom: 1px solid #e4e7eb;
   }
 
   #contact {
@@ -718,12 +717,5 @@ border-bottom: 1px solid #e4e7eb;
 
 .extra-bold {
 	font-weight: 800;
-}
-
-.small-divider {
-	width: 160px;
-	  border-bottom: 1px solid #e4e7eb;
-	  float: right;
-	  margin-top: 20px;
 }
 
