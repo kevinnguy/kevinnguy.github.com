@@ -612,7 +612,7 @@ border-bottom: 1px solid #e4e7eb;
 
 
 
-#education,#courses,#languages,#experience,#projects
+#contact, #education,#courses,#languages,#experience,#projects
 { 
   margin-top:50px;
   margin-bottom:8px; 
@@ -626,6 +626,9 @@ border-bottom: 1px solid #e4e7eb;
 #info
 { text-align:right;}
 
+#experience {
+	margin-top: 0px;
+}
 
 #projects
 { margin-top:30px; }
