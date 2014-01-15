@@ -203,7 +203,7 @@ em
 { font-style:italic; }
 
 strong
-{ font-weight:bold; }
+{ font-weight:normal; }
 
 blockquote,blockquote p
 { color:#777;
@@ -724,9 +724,11 @@ width: 800px;
 
 li {
 	font-size: 16px;
+	font-weight: 300;
 }
 
 dt {
 	font-size: 18px;
+	font-weight: 300;
 }
 
