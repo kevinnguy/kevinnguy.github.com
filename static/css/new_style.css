@@ -593,6 +593,7 @@ sub
 
 #header{margin-bottom: 10px;
 border-bottom: 1px solid #e4e7eb;
+width: 900px;
 }
 
 #me
@@ -615,7 +616,6 @@ border-bottom: 1px solid #e4e7eb;
 { 
   margin-top:50px;
   margin-bottom:8px; 
-  	  border-bottom: 1px solid #e4e7eb;
   	  font-size: 22px;
   }
 
@@ -718,5 +718,9 @@ border-bottom: 1px solid #e4e7eb;
 
 .extra-bold {
 	font-weight: 800;
+}
+
+li {
+	font-size: 14px;
 }
 
