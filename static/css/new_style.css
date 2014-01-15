@@ -655,7 +655,7 @@ width: 800px;
 { text-align:center; }
 
 #footer
-{ display:table;
+{ text-align: center;;
   width:100%; }
 
 .tr
@@ -678,7 +678,7 @@ width: 800px;
 }
 
 #ribbon
-{ background-color:#06A;
+{ background-color:#353535;
   overflow:hidden;
   position:fixed;
   right:-3em;
