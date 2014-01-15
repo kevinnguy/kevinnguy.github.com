@@ -591,7 +591,9 @@ sub
 .icon
 { padding-left:7px; }
 
-#header{margin-bottom: 40px;
+#header{
+	margin-top: 50px;
+	margin-bottom: 40px;
 	padding-bottom: 35px;
 border-bottom: 1px solid #e4e7eb;
 width: 800px;
@@ -679,10 +681,10 @@ width: 800px;
 { background-color:#06A;
   overflow:hidden;
   position:fixed;
-  left:-3em;
+  right:-3em;
   top:2.5em;
-  -moz-transform:rotate(-45deg);
-  -webkit-transform:rotate(-45deg);
+  -moz-transform:rotate(45deg);
+  -webkit-transform:rotate(45deg);
   -moz-box-shadow:0 0 1em #888;
   -webkit-box-shadow:0 0 1em #888;
   z-index:900; }
