@@ -191,7 +191,7 @@ table
 { color:#777; }
 
 p
-{ margin:0 0 14px;
+{ margin:0 0 6px;
   line-height:24px; }
 
 p.lead
@@ -616,7 +616,7 @@ width: 800px;
 #contact, #education,#courses,#languages,#experience,#projects
 { 
   margin-top:50px;
-  margin-bottom:10px; 
+  margin-bottom:14px; 
   	  font-size: 28px;
 
   }
