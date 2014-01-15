@@ -592,7 +592,7 @@ sub
 { padding-left:7px; }
 
 #header{margin-bottom: 40px;
-	padding-bottom: 20px;
+	padding-bottom: 35px;
 border-bottom: 1px solid #e4e7eb;
 width: 800px;
 }
@@ -638,7 +638,7 @@ width: 800px;
 { text-align:right;}
 
 #projects
-{ margin-top:30px; }
+{ margin-top:20px; }
 
 .description
 { padding-right:7px; }
