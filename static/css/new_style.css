@@ -610,7 +610,9 @@ border-bottom: 1px solid #e4e7eb;
  margin-top: 32px;
 }
 
-
+#contact, #education,#courses,#languages {
+	float: right;
+}
 
 #contact, #education,#courses,#languages,#experience,#projects
 { 
@@ -623,7 +625,6 @@ border-bottom: 1px solid #e4e7eb;
   #contact {
 	margin-top: 0;
 }
-
 
 
 #experience,#projects {
@@ -723,6 +724,6 @@ border-bottom: 1px solid #e4e7eb;
 }
 
 .list {
-	margin-top: 10px;
+	padding-top: 25px;
 }
 
