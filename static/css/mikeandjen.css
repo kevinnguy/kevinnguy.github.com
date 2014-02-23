@@ -68,3 +68,9 @@ a:hover {
 	font-size: 20px;
 }
 
+@media(max-width: 800;){
+  .right-side {
+  	min-width: 0px;
+  }
+}
+
