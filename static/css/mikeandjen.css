@@ -42,13 +42,14 @@ a:hover {
 #title {
 	margin-top: 100px;
 	height: 50px;
-	font-size: 44px;
+	font-size: 74px;
 	font-family: 'Tangerine', cursive;
 }
 
 #message {
 	margin-top: 100px;
 	height: 50px;
+	font-size: 20px;
 }
 
 #rsvp {
