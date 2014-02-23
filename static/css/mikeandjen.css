@@ -68,7 +68,8 @@ a:hover {
 	font-size: 20px;
 }
 
-@media(max-width: 800;){
+@media screen and (max-width: 800px){
+
   .right-side {
   	min-width: 0px;
   }
