@@ -52,10 +52,10 @@ a:hover {
 }
 
 #rsvp {
-
-	position: absolute;
+/*	position: absolute;
 	left: 33%;
-	bottom: 40px;
+	bottom: 40px;*/
+	margin-top: 100px;
 }
 
 .button {
