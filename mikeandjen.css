@@ -40,7 +40,7 @@ a:hover {
 }
 
 #title {
-	margin-top: 100px;
+	margin-top: 50px;
 	height: 50px;
 	font-size: 4.625em;
 	font-family: 'Tangerine', cursive;
@@ -60,7 +60,8 @@ a:hover {
 	margin-top: 100px;
 }
 
-#gift {
+#gift, 
+#directions {
 	margin-top: 100px;
 }
 
