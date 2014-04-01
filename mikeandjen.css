@@ -45,22 +45,16 @@ a:hover {
 }
 
 #message {
-	margin-top: 100px;
+	margin-top: 70px;
 	height: 50px;
 	font-size: 26px;
 	line-height: 1.6em;
 }
 
-#rsvp {
-/*	position: absolute;
-	left: 33%;
-	bottom: 40px;*/
-	margin-top: 100px;
-}
-
+#rsvp, 
 #gift, 
 #directions {
-	margin-top: 100px;
+	margin-top: 80px;
 }
 
 .button {
@@ -69,7 +63,7 @@ a:hover {
 	border-radius: 6px;
 	border-color: #fff;
 	padding: 16px 40px;
-	font-size: 24px;
+	font-size: 18px;
 }
 
 @media screen and (max-width: 800px){
