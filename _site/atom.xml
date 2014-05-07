@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Kevin Nguy</title>
+ <link href="https://github.com/kevinnguy/atom.xml" rel="self"/>
+ <link href="https://github.com/kevinnguy/"/>
+ <updated>2014-05-06T23:40:50-07:00</updated>
+ <id>https://github.com/kevinnguy</id>
+ <author>
+   <name>Kevin Nguy</name>
+   <email></email>
+ </author>
+
+ 
+
+</feed>
