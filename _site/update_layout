@@ -1,0 +1,4 @@
+#!/bin/bash
+cd ~/lanyon
+git checkout kevinnguy
+cp -R ~/lanyon/* ~/kevinnguy.github.com

@@ -10,4 +10,4 @@ Alright, finally found a great Jekyll theme for my Github page. I hope to keep t
 
 Keep in touch, okay Future Kevin?
 
-- Soon To Be Past Kevin
+> Soon To Be Past Kevin

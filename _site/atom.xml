@@ -4,13 +4,82 @@
  <title>Kevin Nguy</title>
  <link href="https://github.com/kevinnguy/atom.xml" rel="self"/>
  <link href="https://github.com/kevinnguy/"/>
- <updated>2014-05-06T23:40:50-07:00</updated>
+ <updated>2014-05-07T02:09:26-07:00</updated>
  <id>https://github.com/kevinnguy</id>
  <author>
    <name>Kevin Nguy</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>First Post!</title>
+   <link href="https://github.com/kevinnguy/2014/05/08/first-post/"/>
+   <updated>2014-05-08T00:00:00-07:00</updated>
+   <id>https://github.com/kevinnguy/2014/05/08/first-post</id>
+   <content type="html">&lt;h3&gt;And it&amp;#39;s going to be about Hearthstone!&lt;/h3&gt;
+
+&lt;p&gt;Ever since I received the close-to-ending beta access in January, I have been a big fan and I want to talk about Hearthstone and what it means as a game in our current mobile generation. &lt;/p&gt;
+
+&lt;p&gt;It has been almost a month since the iPad release of Hearthstone and I am quite impressed with how well they were able to translate the current user experience from PC to the smaller, portable device. The designers at Blizzard always had Hearthstone in mind for tablet but to create a user experience that fits both use cases throughout development is remarkable. &lt;/p&gt;
+
+&lt;p&gt;If you were to play Hearthstone on the PC and quickly switch to its iPad counterpart, the gameplay and interaction stays the same and users are able to transfer their experience seemlessly. I&amp;#39;ve been playing on the iPad ever since its mobile debut and it has gotten me even more addicted. But you know what would get me even MORE addicted? &lt;/p&gt;
+
+&lt;h3&gt;Hearthstone is coming out on iPhone!&lt;/h3&gt;
+
+&lt;p&gt;Just kidding, but I think this would have to be the next big step for Hearthstone. Before anyone says that Hearthstone has to come out on Android tablets, and yes, that sounds like a reasonable milestone for the developers to tackle, but I believe that Hearthstone should dive deeper into the mobile gaming space and eventually revolutionize how we play games on our phones and how we value free-to-play games in general. If Hearthstone figures out the user experience and gameplay on the iPhone, I would think that they have an easier time adapting to the Android platform and supporting its fragmented nature. &lt;/p&gt;
+
+&lt;h3&gt;So...how would it work on the iPhone?&lt;/h3&gt;
+
+&lt;p&gt;To be honest, I don&amp;#39;t know. We have always seen collectible card games as a physical experience, where we can interact with the cards and be able to have the full context of the gameplay. Hearthstone has done an excellent job emulating that experience digitally but a huge part of its success is due to letting the user view the full experience of playing cards, which requires screen estate. With this in mind, playing Hearthstone on the iPhone would not be the same as playing it on the iPad or PC and the designers have to transform how we used to play card games onto a smaller screen. There are many games out there like &lt;a href=&quot;http://www.orderandchaos.net/duels/&quot;&gt;Order and Chaos Duels&lt;/a&gt; that have the traditional card game experience on a small screen but I don&amp;#39;t think that this may be the best approach for Hearthstone to take. Eventually, I think that the designers at Blizzard have to choose one out of the two design decisions:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Have its current gameplay experience on a smaller screen and sacrifice usability.&lt;/li&gt;
+&lt;li&gt;Create a new gameplay experience based on a smaller screen and force users to learn how to play Hearthstone all over again.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I feel like these two options are the only options Blizzard can take and I don&amp;#39;t like either of them. I know that as an avid Hearthstone player, I don&amp;#39;t care how they port Hearthstone on iPhone as long as they make it available on the iPhone! I&amp;#39;m sure a lot of fans share the same sentiment but I can&amp;#39;t help but think that this may cause some players to fumble on the mobile gameplay and leave with a bad impression. I can&amp;#39;t wait to see how Hearthstone and the team address this problem. &lt;/p&gt;
+
+&lt;h3&gt;My current decklists&lt;/h3&gt;
+
+&lt;p&gt;I still don&amp;#39;t have all of the cards and I am still playing this game for free! (No, I didn&amp;#39;t buy a pack for golden Gelbin but no regrets! ...)&lt;/p&gt;
+
+&lt;p&gt;The reason why you don&amp;#39;t see any Rogue or Warrior decks is because I simply don&amp;#39;t have all the cards (mostly epic and legendary) to make a formidable deck. I don&amp;#39;t play Paladin because I think it&amp;#39;s the most difficult class to play on constructed. And I don&amp;#39;t have Tirion.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/images/hs1.jpg&quot; alt=&quot;hs1&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/images/hs2.jpg&quot; alt=&quot;hs2&quot;&gt; &lt;/p&gt;
+
+&lt;h3&gt;Sidenote: Order and Chaos Duels&lt;/h3&gt;
+
+&lt;p&gt;I actually played this game before I had access to Hearthstone and this was a fun game to play! Unfortunately, it was extremely difficult to progress without buying card packs with real money but I enjoyed the gameplay on a small screen and I would not be surprised if Hearthstone (or O&amp;amp;C) has taken inspiration from their UI. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/images/ocd1.jpeg&quot; alt=&quot;ocd1&quot;&gt; &lt;/p&gt;
+
+&lt;h3&gt;End&lt;/h3&gt;
+
+&lt;p&gt;It took me a while to write this post but I really enjoyed writing about Hearthstone, especially the design aspect for its gameplay. If you have read this and liked it, I&amp;#39;m glad you did! I should add some visual cue (like kudos from svbtle) to show interests for a particular post. &lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;My favorite card is JARAXXUS! I wish I had that card T-T&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>No More Hello World</title>
+   <link href="https://github.com/kevinnguy/2014/05/07/no-more-hello-world/"/>
+   <updated>2014-05-07T00:00:00-07:00</updated>
+   <id>https://github.com/kevinnguy/2014/05/07/no-more-hello-world</id>
+   <content type="html">&lt;p&gt;Alright, finally found a great Jekyll theme for my Github page. I hope to keep this final and update regularly with thoughts on programming, work, and life. &lt;/p&gt;
+
+&lt;p&gt;Keep in touch, okay Future Kevin?&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Soon To Be Past Kevin&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+ </entry>
  
 
 </feed>
