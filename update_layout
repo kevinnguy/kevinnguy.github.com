@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cp ~/lanyon/* ~/kevinnguy.github.com
