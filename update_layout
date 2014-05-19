@@ -1,5 +1,4 @@
 #!/bin/bash
-cd ~/lanyon
 cp -R ~/kevinnguy.github.com/_config.yml ~/lanyon
 cp -R ~/kevinnguy.github.com/_includes ~/lanyon
 cp -R ~/kevinnguy.github.com/_layouts ~/lanyon
