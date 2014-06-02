@@ -34,6 +34,24 @@
     <div class="content">
       <!-- Note: For this slider example, you'll need some additional styles not included with Ratchet -->
       <style>
+        #mySlider {
+          top: 50%;
+          left: 50%;
+          width: 320px;
+          height: 460px;
+          /*margin: auto auto;*/
+          margin-top: -230px; /*set to a negative number 1/2 of your height*/
+          margin-left: -160px; /*set to a negative number 1/2 of your width*/
+          position: fixed;
+
+          background-color: #fff;
+        }
+
+        .rounded-corners {
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          border-radius: 4px;
+        }
 
         .slider .slide img {
           display: block;
@@ -52,51 +70,20 @@
           text-shadow: 0 0 10px rgba(0,0,0,.5);
         }
 
-        #mySlider {
-          top: 50%;
-          left: 50%;
-          width: 320px;
-          height: 460px;
-          /*margin: auto auto;*/
-          margin-top: -230px; /*set to a negative number 1/2 of your height*/
-          margin-left: -160px; /*set to a negative number 1/2 of your width*/
-          position: fixed;
 
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          border-radius: 4px;
-        }
-
-        #first-slide img {
-          -webkit-border-top-left-radius: 4px;
-          -webkit-border-bottom-left-radius: 4px;
-          -moz-border-radius-topleft: 4px;
-          -moz-border-radius-bottomleft: 4px;
-          border-top-left-radius: 4px;
-          border-bottom-left-radius: 4px;
-        }
-
-        #last-slide img{
-          -webkit-border-top-right-radius: 4px;
-          -webkit-border-bottom-right-radius: 4px;
-          -moz-border-radius-topright: 4px;
-          -moz-border-radius-bottomright: 4px;
-          border-top-right-radius: 4px;
-          border-bottom-right-radius: 4px;
-        }
 
       </style>
 
-      <div class="slider" id="mySlider">
+      <div class="slider rounded-corners" id="mySlider">
         <div class="slide-group">
-          <div class="slide" id="first-slide">
+          <div class="slide rounded-corners">
             <img src="img/kevin1.png">
 <!--             <span class="slide-text">
               <span class="icon icon-left-nav"></span>
               Slide me
             </span> -->
           </div>
-          <div class="slide" id="last-slide">
+          <div class="slide">
             <img src="img/kevin2.png">
           </div>
         </div>
