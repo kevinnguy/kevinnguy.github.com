@@ -11,20 +11,25 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-    <!-- Include the compiled Ratchet CSS -->
-    <link href="css/ratchet.css" rel="stylesheet">
+    <link href="css/ratchet.min.css" rel="stylesheet">
 
-    <!-- Include the compiled Ratchet JS -->
-    <script src="js/ratchet.js"></script>
+    <script src="js/ratchet.min.js"></script>
+    <script src="js/retina.min.js"></script>
+
+    <style>
+      .content {
+        background-color: #3B2F63;
+        background-image: radial-gradient( at 50% top, rgba(84,90,182,0.6) 0%,rgba(84,90,182,0) 75%),radial-gradient( at right top, #794aa2 0%,rgba(121,74,162,0) 57%);
+        color: #c7c0de;
+        background-repeat: no-repeat;
+        color: #c7c0de;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
 
   </head>
   <body>
-
-    <!-- Make sure all your bars are the first things in your <body> -->
-    <header class="bar bar-nav">
-      <h1 class="title">Ratchet</h1>
-    </header>
-
     <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
     <div class="content">
       <!-- Note: For this slider example, you'll need some additional styles not included with Ratchet -->
@@ -47,29 +52,38 @@
           text-shadow: 0 0 10px rgba(0,0,0,.5);
         }
 
+        #mySlider {
+          top: 50%;
+          left: 50%;
+          width: 320px;
+          height: 460px;
+          /*margin: auto auto;*/
+          margin-top: -230px; /*set to a negative number 1/2 of your height*/
+          margin-left: -160px; /*set to a negative number 1/2 of your width*/
+          position: fixed;
+
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          border-radius: 4px;
+        }
+
       </style>
 
       <div class="slider" id="mySlider">
         <div class="slide-group">
           <div class="slide">
-            <img src="img/slide-1.jpg">
-            <span class="slide-text">
+            <img src="img/kevin1.png">
+<!--             <span class="slide-text">
               <span class="icon icon-left-nav"></span>
               Slide me
-            </span>
+            </span> -->
           </div>
           <div class="slide">
-            <img src="img/slide-2.jpg">
-          </div>
-          <div class="slide">
-            <img src="img/slide-3.jpg">
+            <img src="img/kevin2.png">
           </div>
         </div>
       </div>
 
     </div>
-
-
-
   </body>
 </html>
