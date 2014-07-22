@@ -1,23 +1,29 @@
-# Dependencies
-markdown:         redcarpet
-pygments:         true
+permalink: '/:title'
+markdown: kramdown
 
-# Permalinks
-permalink:        pretty
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+auto: true
+pygments: true
 
-# Setup
-title:            Kevin Nguy
-tagline:          'No More Hello World'
-description:      'A simple blog'
-url:              https://github.com/kevinnguy
+# Themes are encouraged to use these universal variables 
+# so be sure to set them if your theme uses them.
+#
+title : Kevin Nguy
+tagline: Kevin Nguy
+author :
+  name : Kevin Nguy
+  email : me@kevinnguy.com
+  facebook: kevinnguy
+  twitter : kevnguy
+  github : kevinnguy
+  linkedin : kevinnguy
 
-author:
-  name:           'Kevin Nguy'
-
-paginate:         5
-
-# Custom vars
-version:          1.0.0
-
-github:
-  repo:           https://github.com/kevinnguy
+# The production_url is only used when full-domain names are needed
+# such as sitemap.txt 
+# Most places will/should use BASE_PATH to make the urls
+#
+# If you have set a CNAME (pages.github.com) set your custom domain here.
+# Else if you are pushing to username.github.com, replace with your username.
+# Finally if you are pushing to a GitHub project page, include the project name at the end.
+#
+production_url : http://kevinnguy.com

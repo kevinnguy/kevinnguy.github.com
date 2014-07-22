@@ -1,25 +1,15 @@
 ---
 layout: default
+blog: true
 ---
 
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-  {{ content }}
-</div>
+<ul class="twelve columns">
+    <li id="posts">
+      <a class="eight columns" href="{{ page.url }}">{{ page.title }}</a>
+      <span class="three columns">{{ page.date | date: "%b %d, %Y" }}</span>
+    </li>
 
-<div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+    <article class="eleven columns" id="content">
+      {{ content }}
+    </article>
+</ul>

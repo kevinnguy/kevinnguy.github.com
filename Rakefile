@@ -5,7 +5,7 @@ require 'time'
 
 SOURCE = "."
 CONFIG = {
-  'version' => "0.3.0",
+  'version' => "0.2.13",
   'themes' => File.join(SOURCE, "_includes", "themes"),
   'layouts' => File.join(SOURCE, "_layouts"),
   'posts' => File.join(SOURCE, "_posts"),
@@ -13,42 +13,51 @@ CONFIG = {
   'theme_package_version' => "0.1.0"
 }
 
-# Path configuration helper
-module JB
-  class Path
-    SOURCE = "."
-    Paths = {
-      :layouts => "_layouts",
-      :posts => "_posts"
-    }
-    
-    def self.base
-      SOURCE
-    end
+desc "Compile CSS files"
+task :css do
+  puts "Merging CSS"
 
-    # build a path relative to configured path settings.
-    def self.build(path, opts = {})
-      opts[:root] ||= SOURCE
-      path = "#{opts[:root]}/#{Paths[path.to_sym]}/#{opts[:node]}".split("/")
-      path.compact!
-      File.__send__ :join, path
-    end
-  
-  end #Path
-end #JB
+  `rm static/css/style.css`
+  `rm static/css/temp.css`
 
-# Usage: rake post title="A Title" [date="2012-02-09"] [tags=[tag1,tag2]] [category="category"]
+  %W{font-awesome syntax skeleton base layout}.each do |file|
+    `cat ./static/css/#{file}.css >> ./static/css/temp.css`
+  end
+
+  # `mv ./static/css/temp.css ./static/css/style.css`
+  `yuicompressor ./static/css/temp.css > ./static/css/style.css`
+
+  puts 'CSS dumped to ./static/css/style.css'
+end
+
+desc "Deploy site"
+task :deploy do
+  Rake::Task['css'].execute
+  puts 'Comitting generated CSS'
+  `git add static/css/style.css`
+  `git commit -m 'Compressed CSS for deploy'`
+
+  puts "Pushing to Github"
+  `git push origin master`
+end
+
+task "Serve"
+task :serve do
+  Rake::Task['css'].execute
+
+  `open http://localhost:4000`
+  `jekyll --serve --no-pygments`
+end
+
+# Usage: rake post title="A Title" [date="2012-02-09"]
 desc "Begin a new post in #{CONFIG['posts']}"
 task :post do
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
   title = ENV["title"] || "new-post"
-  tags = ENV["tags"] || "[]"
-  category = ENV["category"] || ""
-  category = "\"#{category.gsub(/-/,' ')}\"" if !category.empty?
   slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
   begin
     date = (ENV['date'] ? Time.parse(ENV['date']) : Time.now).strftime('%Y-%m-%d')
-  rescue => e
+  rescue Exception => e
     puts "Error - date format must be YYYY-MM-DD, please check you typed it correctly!"
     exit -1
   end
@@ -61,53 +70,8 @@ task :post do
   open(filename, 'w') do |post|
     post.puts "---"
     post.puts "layout: post"
-    post.puts "title: #{title.gsub(/-/,' ')}"
-    post.puts 'description: ""'
-    post.puts "category: #{category}"
-    post.puts "tags: #{tags}"
+    post.puts "title: \"#{title.gsub(/-/,' ')}\""
     post.puts "---"
   end
 
-  system "open #{filename}"
 end # task :post
-
-# Usage: rake page name="about.html"
-# You can also specify a sub-directory path.
-# If you don't specify a file extention we create an index.html at the path specified
-desc "Create a new page."
-task :page do
-  name = ENV["name"] || "new-page.md"
-  filename = File.join(SOURCE, "#{name}")
-  filename = File.join(filename, "index.html") if File.extname(filename) == ""
-  title = File.basename(filename, File.extname(filename)).gsub(/[\W\_]/, " ").gsub(/\b\w/){$&.upcase}
-  if File.exist?(filename)
-    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
-  end
-  
-  mkdir_p File.dirname(filename)
-  puts "Creating new page: #{filename}"
-  open(filename, 'w') do |post|
-    post.puts "---"
-    post.puts "layout: page"
-    post.puts "title: \"#{title}\""
-    post.puts 'description: ""'
-    post.puts "---"
-  end
-end # task :page
-
-def ask(message, valid_options)
-  if valid_options
-    answer = get_stdin("#{message} #{valid_options.to_s.gsub(/"/, '').gsub(/, /,'/')} ") while !valid_options.include?(answer)
-  else
-    answer = get_stdin(message)
-  end
-  answer
-end
-
-def get_stdin(message)
-  print message
-  STDIN.gets.chomp
-end
-
-#Load custom rake scripts
-Dir['_rake/*.rake'].each { |r| load r }
