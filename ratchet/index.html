@@ -81,10 +81,6 @@
         font-size: 20px;
       }
 
-      .center {
-        text-align: center;
-      }
-
       #profile-picture {
         margin-top: 33px;
       }
@@ -95,65 +91,48 @@
         border-radius: 64px;
         border-color: #9b59b6;
         border-width: 2px;
-        border-style: solid;;
+        border-style: solid;
+        text-align: center;
       }
 
       #name {
         font-size: 36px;
-        width: 300px;
         height: 76px;
-        line-height: 76px;
         color: #5B2678;
-      }
-
-      #name span {
-        display: inline-block;
-        vertical-align: middle;
-        line-height: normal;      
       }
 
       #title {
         font-size: 26px;
-        width: 300px;
         height: 36px;
-        line-height: 36px;
         color: #8D47B3;
-      }
-
-      #title span {
-        display: inline-block;
-        vertical-align: middle;
-        line-height: normal;      
       }
 
       #location {
         font-size: 26px;
-        width: 300px;
         height: 36px;
-        line-height: 36px;
         color: #8D47B3;
-      }
-
-      #location span {
-        display: inline-block;
-        vertical-align: middle;
-        line-height: normal;      
       }
 
       #bio {
         font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
         font-size: 18px;
-        width: 300px;
         height: 88px;
-        line-height: 88px;
         color: #000;
       }
 
-      #bio span {
-        display: inline-block;
-        vertical-align: middle;
-        line-height: normal;      
+      .table {
+        display:table;
+        width: 300px;
+        padding: 0 10px;
       }
+
+      .center {
+        display: table-cell;
+        vertical-align:middle;
+        text-align: center;
+        white-space: normal;
+      }
+
 
       .slide {
        font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
@@ -167,11 +146,32 @@
         <div class="slide-group">
           <div class="slide">
             <!-- <img class="rounded-corners" src="img/kevin1.png"> -->
-            <div id="profile-picture" class="center"><img src="img/kevin.png"></div>
-            <div id="name" class="center"><span>Steven Sandwich</span></div>
-            <div id="title" class="center"><span>Head Chef Ninja Baker</span></div>
-            <div id="location" class="center"><span>Apple, Inc.</span></div>
-            <div id="bio" class="center"><span>I eat nails for lunch and dinner.I eat nails for lunch and dinner.I eat nails for lunch and dinner.</span></div>
+            <div id="profile-picture"><img src="img/kevin.png"></div>
+            
+            <div id="name" class="table">
+              <div class="center">
+                Steven Sandwich
+              </div>
+            </div>
+
+            <div id="title" class="table">
+              <div class="center">
+                Head Chef Ninja Baker              
+              </div>
+            </div>
+
+            <div id="location" class="table">
+              <div class="center">
+                Apple, Inc.             
+              </div>
+            </div>
+
+            <div id="bio" class="table">
+              <div class="center">
+                I eat nails for lunch and dinner. I eat nails for lunch and dinner. I eat nails for lunch and dinner.
+              </div>
+            </div>
+
           </div>
           <div class="slide">
             <img class="rounded-corners" src="img/kevin2.png">
