@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Kevin Nguy &#183; Handshake</title>
+    <title>Steven Avocado &#183; Handshake</title>
 
     <!-- Sets initial viewport load and disables zooming  -->
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
@@ -90,14 +90,14 @@
         width: 128px;
         height: 128px;
         border-radius: 64px;
-        border-color: #9b59b6;
-        border-width: 2px;
+        border-color: #8D47B3;
+        border-width: 1px;
         border-style: solid;
       }
 
       #name {
-        font-size: 36px;
         height: 76px;
+        font-size: 36px;
         color: #5B2678;
       }
 
@@ -116,14 +116,14 @@
       #bio {
         font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
         font-size: 18px;
-        height: 88px;
+        height: 98px;
         color: #000;
       }
 
       .table {
         display:table;
         width: 300px;
-        padding: 0 10px;
+        padding: 0 15px;
       }
 
       .center {
@@ -137,6 +137,61 @@
       .slide {
        font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
       }
+
+      .small-image img {
+        float: left;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        border-color: #8D47B3;
+        border-width: 1px;
+        border-style: solid;
+      }
+
+      .job-title {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+        height: 30px;
+        width: 202px;
+        float: left;
+        font-size: 21px;
+        color: #5B2678;
+        padding-left: 8px;
+        margin-top: 4px; /* Can't center text so resorting to margin-top */
+      }
+
+      .job-location {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+        height: 30px;
+        width: 202px;
+        float: left;
+        font-size: 18px;
+        color: #8D47B3;
+        padding-left: 8px;
+      }
+
+      .left {
+        display: table-cell;
+        vertical-align:middle;
+        white-space: normal;
+        text-align: left;
+      }
+
+      #experience, #education {
+        margin-top: 36px;
+        padding: 0px 15px;
+        height: 42px;
+        font-size: 34px;
+        color: #5B2678;
+      }
+
+      #education {
+        margin-top: 26px;
+      }
+
+      .job {
+        margin-top: 22px;
+        height: 60px;
+      }
     </style>
 
   </head>
@@ -144,8 +199,51 @@
     <div class="content">
       <div class="slider rounded-corners" id="mySlider">
         <div class="slide-group">
+          <div class="slide">            
+            <div id="experience" class="table">
+              <div class="left">
+                Experience
+              </div>
+            </div>
+
+            <div class="job table">
+              <div class="small-image"><img src="img/kevin.png"></div>
+              <div class="job-title left">
+                Software Developer              
+              </div>
+              <div class="job-location left">
+                Github
+              </div>
+            </div>
+
+            <div class="job table" style="margin-top:26px;">
+              <div class="small-image"><img src="img/kevin.png"></div>
+              <div class="job-title left">
+                Sushi Chef              
+              </div>
+              <div class="job-location left">
+                Twitter
+              </div>
+            </div>
+
+            <div id="education" class="table">
+              <div class="left">
+                Education
+              </div>
+            </div>
+
+            <div class="job table" style="margin-top:26px;">
+              <div class="small-image"><img src="img/kevin.png"></div>
+              <div class="job-title left">
+                B.S. Chemistry              
+              </div>
+              <div class="job-location left">
+                UC Davis
+              </div>
+            </div>
+
+          </div>
           <div class="slide">
-            <!-- <img class="rounded-corners" src="img/kevin1.png"> -->
             <div id="profile-picture"><img src="img/kevin.png"></div>
             
             <div id="name" class="table">
@@ -173,9 +271,9 @@
             </div>
 
           </div>
-          <div class="slide">
+          <!-- <div class="slide">
             <img class="rounded-corners" src="img/kevin2.png">
-          </div>
+          </div> -->
         </div>
       </div>
 
