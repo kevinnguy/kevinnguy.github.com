@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Steven Avocado &#183; Handshake</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link href="css/ratchet.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+    <script src="js/ratchet.min.js"></script>
+    <script src="js/retina.min.js"></script>
+
+    <style>
+      .content {
+        background-color: #3B2F63;
+        background-image: radial-gradient( at 50% top, rgba(84,90,182,0.6) 0%,rgba(84,90,182,0) 75%),radial-gradient( at right top, #794aa2 0%,rgba(121,74,162,0) 57%);
+        color: #c7c0de;
+        background-repeat: no-repeat;
+        color: #c7c0de;
+        margin: 0;
+        padding: 0;
+      }
+
+      #mySlider {
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        height: 460px;
+        /*margin: auto auto;*/
+        margin-top: -230px; /*set to a negative number 1/2 of your height*/
+        margin-left: -150px; /*set to a negative number 1/2 of your width*/
+        position: fixed;
+
+        background-color: #fff;
+      }
+
+      .rounded-corners {
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+      }
+
+/*      .slider .slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      .slider .slide-group .slide-text {
+        position: absolute;
+        top: 45%;
+        left: 0;
+        width: 100%;
+        font-size: 24px;
+        color: #fff;
+        text-align: center;
+        text-shadow: 0 0 10px rgba(0,0,0,.5);
+      }
+*/
+      .download {
+        bottom: 0%;
+        left: 50%;
+        width: 300px;
+        height: 30px;
+        /*margin: auto auto;*/
+        /*margin-bottom: -46px;*/
+        margin-left: -150px; /*set to a negative number 1/2 of your width*/
+        position: fixed;
+        text-align: center;
+        font-size: 18px;
+
+      }
+
+      .download a {
+        font-size: 20px;
+      }
+
+      #profile-picture {
+        margin-top: 33px;
+        text-align: center;
+      }
+
+      #profile-picture img {
+        width: 128px;
+        height: 128px;
+        border-radius: 64px;
+        border-color: #8D47B3;
+        border-width: 1px;
+        border-style: solid;
+      }
+
+      #name {
+        height: 76px;
+        font-size: 36px;
+        color: #5B2678;
+      }
+
+      #title {
+        font-size: 26px;
+        height: 36px;
+        color: #8D47B3;
+      }
+
+      #location {
+        font-size: 26px;
+        height: 36px;
+        color: #8D47B3;
+      }
+
+      #bio {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Open Sans", Helvetica, Arial, "Lucida Grande", sans-serif; 
+        font-weight: 400;
+        font-size: 18px;
+        height: 98px;
+        color: #000;
+      }
+
+      .table {
+        display:table;
+        width: 300px;
+        padding: 0 15px;
+      }
+
+      .center {
+        display: table-cell;
+        vertical-align:middle;
+        text-align: center;
+        white-space: normal;
+      }
+
+
+      .slide {
+       font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Open Sans", Helvetica, Arial, "Lucida Grande", sans-serif; 
+       font-weight: 300;
+      }
+
+      .small-image img {
+        float: left;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        border-color: #8D47B3;
+        border-width: 1px;
+        border-style: solid;
+      }
+
+      .job-title {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Open Sans", Helvetica, Arial, "Lucida Grande", sans-serif; 
+        font-weight: 400;
+        height: 30px;
+        width: 202px;
+        float: left;
+        font-size: 21px;
+        color: #5B2678;
+        padding-left: 8px;
+        margin-top: 4px; /* Can't center text so resorting to margin-top */
+      }
+
+      .job-location {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Open Sans", Helvetica, Arial, "Lucida Grande", sans-serif; 
+        font-weight: 400;
+        height: 30px;
+        width: 202px;
+        float: left;
+        font-size: 18px;
+        color: #8D47B3;
+        padding-left: 8px;
+      }
+
+      .left {
+        display: table-cell;
+        vertical-align:middle;
+        white-space: normal;
+        text-align: left;
+      }
+
+      #experience, #education {
+        margin-top: 36px;
+        padding: 0px 15px;
+        height: 42px;
+        font-size: 34px;
+        color: #5B2678;
+      }
+
+      #education {
+        margin-top: 26px;
+      }
+
+      .job {
+        margin-top: 22px;
+        height: 60px;
+      }
+
+      #name-line-height {
+        line-height: 110%;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="content">
+      <div class="slider rounded-corners" id="mySlider">
+        <div class="slide-group">
+          <div class="slide">
+            <div id="profile-picture"><img src="img/kevin.png"></div>
+            
+            <div id="name" class="table">
+              <div id="name-line-height" class="center">
+                Kevin Nguy
+              </div>
+            </div>
+
+            <div id="title" class="table">
+              <div class="center">
+                Head Chef Ninja Baker              
+              </div>
+            </div>
+
+            <div id="location" class="table">
+              <div class="center">
+                Apple, Inc.             
+              </div>
+            </div>
+
+            <div id="bio" class="table">
+              <div class="center">
+                I eat nails for lunch and dinner. I eat nails for lunch and dinner. I eat nails for lunch and dinner.
+              </div>
+            </div>
+
+          </div>
+
+          <div class="slide">            
+            <div id="experience" class="table">
+              <div class="left">
+                Experience
+              </div>
+            </div>
+
+            <div class="job table">
+              <div class="small-image"><img src="img/kevin.png"></div>
+              <div class="job-title left">
+                Software Developer              
+              </div>
+              <div class="job-location left">
+                Github
+              </div>
+            </div>
+
+            <div class="job table" style="margin-top:26px;">
+              <div class="small-image"><img src="img/kevin.png"></div>
+              <div class="job-title left">
+                Sushi Chef              
+              </div>
+              <div class="job-location left">
+                Twitter
+              </div>
+            </div>
+
+            <div id="education" class="table">
+              <div class="left">
+                Education
+              </div>
+            </div>
+
+            <div class="job table" style="margin-top:26px;">
+              <div class="small-image"><img src="img/kevin.png"></div>
+              <div class="job-title left">
+                B.S. Chemistry              
+              </div>
+              <div class="job-location left">
+                UC Davis
+              </div>
+            </div>
+          </div>
+          <!-- <div class="slide">
+            <img class="rounded-corners" src="img/kevin2.png">
+          </div> -->
+        </div>
+      </div>
+
+      <div class="download">
+        <a href="#">Download Handshake</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+#!/bin/bash
+cp -R ~/kevinnguy.github.com/_config.yml ~/lanyon
+cp -R ~/kevinnguy.github.com/_includes ~/lanyon
+cp -R ~/kevinnguy.github.com/_layouts ~/lanyon
+cp -R ~/kevinnguy.github.com/_site ~/lanyon
+cp -R ~/kevinnguy.github.com/atom.xml ~/lanyon
+cp -R ~/kevinnguy.github.com/404.html ~/lanyon
+cp -R ~/kevinnguy.github.com/index.html ~/lanyon
+cp -R ~/kevinnguy.github.com/_includes ~/lanyon
+cp -R ~/kevinnguy.github.com/Rakefile ~/lanyon
+
+cp -R ~/kevinnguy.github.com/public/css ~/lanyon/public/

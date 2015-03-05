@@ -2,64 +2,163 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> 	
-<html lang="en"> 
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
 <!--<![endif]-->
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />	<!-- Force Latest IE rendering engine -->
-    <title>Kevin Nguy</title>
+    <title>Kevin Nguy &bull; Resume</title>
 
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" href="/static/images/favicon.png" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="static/images/favicon.png" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="static/css/new_style.css">
 
+    <style media='print' type='text/css'>
+       #ribbon {display: none}
+       #footer {padding: 40px 0 0 0;}
+       body {color: #000}
+    </style>
+
+    <!--[if IE 7]>
+      <script src="/static/css/font-awesome-ie7.css"></script>
+    <![endif]-->
   </head>
   <body>
-    <div class="container">	
-      <div class="four columns sidebar">
+    <div id="ribbon">
+      <a href="javascript:window.print()">Print my resume!</a>
+    </div>
+
+    <div class="container" id="header">
+      <div id="me">
+        <a style="font-size: 40px" class="normal" href='http://kevinnguy.com' target="_blank">Kevin Nguy</a>
+      </div>
+      <div style="text-align:center;">
+        <p style="font-size: 26px" class="light">Currently seeking an iOS developer position.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="left" class="four columns sidebar">
         <section id="info">
-          <a id="avatar" href="/"></a>
-
+          <div id="contact">Contact Me</div>
           <ul id="social">
-            <li>
-              <a href="http://linkedin.com/in/kevinnguy" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Sidebar LinkedIn']);" title="Connect with me" target="_blank">linkedin.com/in/kevinnguy</a><a href="http://linkedin.com/in/kevinnguy" class="icon-linkedin icon" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Sidebar LinkedIn']);" title="Connect with me" target="_blank"></a>
+<!--             <li>
+              <a href="http://linkedin.com/in/kevinnguy" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Sidebar LinkedIn']);" title="Connect with me" target="_blank">Connect with me</a>
             </li>
 
             <li>
-              <a href="http://github.com/kevinnguy" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Sidebar Github']);" title="Fork me" target="_blank">github.com/kevinnguy</a><a href="http://github.com/kevinnguy" class="icon-github icon" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Sidebar Github']);" title="Fork me" target="_blank"></a>
+              <a href="http://linkedin.com/in/kevinnguy" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Sidebar LinkedIn']);" title="Connect with me" target="_blank">Connect with me</a>
+            </li> -->
+
+            <li>
+              <a href="http://linkedin.com/in/kevinnguy" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Sidebar LinkedIn']);" title="Connect with me" target="_blank">linkedin.com/in/kevinnguy</a>
             </li>
 
             <li>
-              <a href="http://kevinnguy.com" target="_blank">kevinnguy.com</a><a href="http://kevinnguy.com" class="icon-globe icon" target="_blank"></a>
+              <a href="http://github.com/kevinnguy" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Sidebar Github']);" title="Fork me" target="_blank">github.com/kevinnguy</a>
+            </li>
+
+            <li>
+              <a href="http://kevinnguy.com" onClick="_gaq.push(['_trackEvent', 'Link', 'Click', 'Sidebar kevinnguy.com']);" title="My website" target="_blank">kevinnguy.com</a>
             </li>
           </ul>
+
+          <div id="education">Education</div>
+          <ul id="social">
+            <li>University of California, Davis</br>August 2012</li>
+            <li>B.S. Computer Science</li>
+          </ul>
+
+          <div id="languages">Skills & Tools</div>
+          <ul id="social">
+            <li>Objective C & Swift &bull; Xcode</li>
+            <li>Java - Android &bull; IntelliJ</li>
+            <li>Rails &bull; Sublime Text 2</li>
+            <li>Zsh/Bash &bull; iTerm 2</li>
+            <li>Photo & Illustration &bull; Sketch</li>
+          </ul>
+
         </section>
       </div>
 
-      <ul id="posts" class="twelve columns">
-  
-    <li class="post">
-      <a class="eight columns" href="/cupcakeipsum">CupcakeIpsum</a>
-      <span class="three columns">Feb 06, 2013</span>
-    </li>
-  
-    <li class="post">
-      <a class="eight columns" href="/hello-world">Hello World</a>
-      <span class="three columns">Jan 06, 2013</span>
-    </li>
-  
-</ul>
+      <div id="main">
+        <div id="experience" class="columns">
+          Experience
+        </div>
 
+        <dl class="fourteen columns bottom">
+          <dt>
+            <p class="eight columns"><strong>Co-Founder</strong> at Preamble  &bull;  San Francisco</p><span class="three columns right"><em>Aug 2014 - Current</em></span></dt>
+          </dt>
+          <ul>
+            <li class="eleven columns">Lead development of an iOS social networking app from its initial wireframes to its final release.</li>
+            <li class="eleven columns">Contributed and collaborated with the design team on user interface and user experience development.</li>
+            <li class="eleven columns">Created multiple custom frameworks and libraries for the engineering team to utilize in all iOS applications</li>
+          </ul>
+        </dl>
+
+        <dl class="fourteen columns bottom">
+          <dt>
+            <p class="eight columns"><strong>iOS Developer</strong> at One Mainstream  &bull;  Cupertino</p><span class="three columns right"><em>Feb 2014 - Aug 2014</em></span></dt>
+          </dt>
+          <ul>
+            <li class="eleven columns">Lead development of an iOS social networking app from its initial wireframes to its final release.</li>
+            <li class="eleven columns">Contributed and collaborated with the design team on user interface and user experience development.</li>
+            <li class="eleven columns">Created multiple custom frameworks and libraries for the engineering team to utilize in all iOS applications</li>
+          </ul>
+        </dl>
+
+        <dl class="fourteen columns bottom">
+          <dt>
+            <p class="eight columns"><strong>iOS Developer</strong> at Flagship  &bull;  Roseville</p><span class="three columns right"><em>Nov 2013 - Jan 2014</em></span></dt>
+          </dt>
+          <ul>
+            <li class="eleven columns">Lead development of an iOS social networking app from its initial wireframes to its final release.</li>
+            <li class="eleven columns">Contributed and collaborated with the design team on user interface and user experience development.</li>
+            <li class="eleven columns">Created multiple custom frameworks and libraries for the engineering team to utilize in all iOS applications</li>
+          </ul>
+        </dl>
+
+        <dl class="fourteen columns bottom">
+          <dt><p class="eight columns bigfont"><strong>Software Engineer</strong> at Ask Ziggy  &bull;  Rocklin</p><span class="three columns right"><em>Feb 2013 - Nov 2013</em></span></dt>
+          <ul>
+            <li class="eleven columns ">Lead development of Ask Ziggy's premiere application, Teal. Teal is a voice-enabled hotel booking iOS app that allow users to search and book hotels by speech.</li>
+            <li class="eleven columns ">Contributed and collaborated with the NLP backend team on front-end and backend design and development.</li>
+            <li class="eleven columns ">Developed and designed iOS prototypes in rapid sprint cycles for prospective businesses and investors.</li>
+          </ul>
+        </dl>
+
+        <div id="projects" class="columns">
+          Apps and Projects
+        </div>
+
+        <dl class="fourteen columns bottom">
+          <dt><p class="eight columns bigfont"><strong>WOTD - Watch Of The Day</strong> &bull; iOS </p><span class="three columns right"><em>Jan 2015 - Current</em></span></dt>
+          <ul>
+            <li class="eleven columns ">Lead development of a health app that allowed users to track their daily activities to assess relative risk. Prototyped at UC Berkeley's Health Hackathon event.</li>
+          </ul>
+        </dl>
+
+        <dl class="fourteen columns bottom" style="margin-bottom: -5px;">
+          <dt><p class="eight columns bigfont"><strong>Mortify</strong> &bull; iOS </p><span class="three columns right"><em>Oct 2013 - Dec 2013</em></span></dt>
+          <ul>
+            <li class="eleven columns ">Lead development of a health app that allowed users to track their daily activities to assess relative risk. Prototyped at UC Berkeley's Health Hackathon event.</li>
+          </ul>
+        </dl>
+
+      </div>
     </div>
+
+    <!-- <div id="footer">kevinnguy.com</div> -->
 
     <script type="text/javascript">
 
@@ -75,4 +174,4 @@
 
     </script>
   </body>
-</html> 
+</html>
